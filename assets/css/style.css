@@ -93,7 +93,8 @@
 }
 
 .strategic_planning .col_12,
-.work_with_us .col_12 {
+.work_with_us .col_12,
+.cta .col_12 {
   background-color: var(--responsive-light);
 }
 
@@ -145,7 +146,8 @@ body {
 /* #region ||||| MAIN ||||| */
 
 .strategic_planning,
-.work_with_us {
+.work_with_us,
+.cta {
   background-color: var(--responsive-primary);
 }
 
