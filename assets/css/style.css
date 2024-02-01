@@ -154,6 +154,11 @@ body {
 /* #endregion ||||| MAIN ||||| */
 
 /* #region ||||| FOOTER ||||| */
+
+#site_footer {
+  background-color: var(--responsive-dark);
+}
+
 /* #endregion ||||| FOOTER ||||| */
 
 /* #region ||||| MEDIA QUERY ||||| */
