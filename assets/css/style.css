@@ -28,15 +28,22 @@
   align-items: center;
 }
 
+.flex_spacing {
+  gap: 2rem;
+}
+
+.hide {
+  display: none;
+}
+
+.visualize {
+  display: inline;
+}
+
 .p-1 {
   padding: 1rem 0;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -1rem;
-}
 
 /* #endregion ||||| UTILITIES ||||| */
 /* #region ||||| DEBUG RULES ||||| */
@@ -50,9 +57,34 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
 .container {
   width: 90%;
+  max-width: 1200px;
   margin: auto;
+}
+
+.btn {
+  background-color: var(--responsive-light);
+  color: var(--responsive-dark);
+  font-weight: bold;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 0.8rem;
+}
+
+.links {
+  list-style: none;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--responsive-light);
 }
 
 /* #endregion ||||| COMMON RULES ||||| */
@@ -64,7 +96,7 @@ body {
   background-color: var(--responsive-secondary);
 }
 
-.menu {
+.hamburger_menu {
   color: var(--responsive-light);
 }
 
@@ -80,8 +112,20 @@ body {
 
 @media screen and (min-width: 768px) {}
 
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+  .hide_md {
+    display: none;
+  }
+}
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+  .hide_lg {
+    display: none;
+  }
+
+  .visualize_lg {
+    display: flex;
+  }
+}
 
 /* #endregion ||||| MEDIA QUERY ||||| */
