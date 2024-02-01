@@ -84,7 +84,8 @@
   height: 500px
 }
 
-.strategic_planning .col_12 {
+.strategic_planning .col_12,
+.work_with_us .col_12 {
   background-color: var(--responsive-light);
 }
 
@@ -135,7 +136,8 @@ body {
 
 /* #region ||||| MAIN ||||| */
 
-.strategic_planning {
+.strategic_planning,
+.work_with_us {
   background-color: var(--responsive-primary);
 }
 
@@ -157,6 +159,10 @@ body {
     width: calc((100% / 12) * 4);
   }
 
+  .col_md_6 {
+    width: calc((100% / 12) * 6);
+  }
+
   .col_md_8 {
     width: calc((100% / 12) * 8);
   }
@@ -170,6 +176,10 @@ body {
 
   .visualize_lg {
     display: flex;
+  }
+
+  .col_lg_4 {
+    width: calc((100% / 12) * 4);
   }
 
   .col_lg_6 {
