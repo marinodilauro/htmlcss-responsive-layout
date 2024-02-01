@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px dashed;
+  ;
 }
 
 
@@ -32,6 +34,31 @@
   gap: 2rem;
 }
 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+.col_4 {
+  width: calc((100% / 12) * 4);
+}
+
+.col_8 {
+  width: calc((100% / 12) * 8);
+}
+
+.col_12 {
+  width: 100%;
+}
+
 .hide {
   display: none;
 }
@@ -48,6 +75,10 @@
 /* #endregion ||||| UTILITIES ||||| */
 /* #region ||||| DEBUG RULES ||||| */
 
+.col_12 {
+  background-color: var(--responsive-primary);
+  height: 500px
+}
 
 /* #endregion ||||| DEBUG RULES ||||| */
 
@@ -57,16 +88,8 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -1rem;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
+[class^="col_"] {
+  padding: 1rem;
 }
 
 .btn {
@@ -116,6 +139,15 @@ body {
   .hide_md {
     display: none;
   }
+
+  .col_sm_4 {
+    width: calc((100% / 12) * 4);
+  }
+
+  .col_sm_8 {
+    width: calc((100% / 12) * 8);
+  }
+
 }
 
 @media screen and (min-width: 1200px) {
