@@ -1,5 +1,87 @@
+/* #region ||||| UTILITIES ||||| */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
+:root {
+  --responsive-dark: rgba(51, 51, 51, 1);
+  --responsive-light: rgba(255, 255, 255, 1);
+  --responsive-primary: rgba(151, 146, 228, 1);
+  --responsive-secondary: rgba(0, 132, 253, 1);
+  --responsive-accent: rgba(253, 193, 95, 1);
+}
+
+.d_flex {
+  display: flex;
+}
+
+.flex_items_center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_space_between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.p-1 {
+  padding: 1rem 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+/* #endregion ||||| UTILITIES ||||| */
+/* #region ||||| DEBUG RULES ||||| */
+
+
+/* #endregion ||||| DEBUG RULES ||||| */
+
+/* #region ||||| COMMON RULES ||||| */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* #endregion ||||| COMMON RULES ||||| */
+
+
+/* #region ||||| HEADER ||||| */
+
+#site_header {
+  background-color: var(--responsive-secondary);
+}
+
+.menu {
+  color: var(--responsive-light);
+}
+
+/* #endregion ||||| HEADER ||||| */
+
+/* #region ||||| MAIN ||||| */
+/* #endregion ||||| MAIN ||||| */
+
+/* #region ||||| FOOTER ||||| */
+/* #endregion ||||| FOOTER ||||| */
+
+/* #region ||||| MEDIA QUERY ||||| */
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 1200px) {}
+
+/* #endregion ||||| MEDIA QUERY ||||| */
