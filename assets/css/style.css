@@ -15,6 +15,7 @@
   --responsive-secondary: rgba(0, 132, 253, 1);
   --responsive-card_bg: rgba(181, 221, 255, 1);
   --responsive-accent: rgba(253, 193, 95, 1);
+  --responsive-font_color: rgba(90, 110, 127, 1);
 }
 
 .d_flex {
@@ -27,7 +28,7 @@
 }
 
 .flex_items_center {
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 
@@ -45,7 +46,6 @@
 }
 
 .container {
-  width: 90%;
   max-width: 1200px;
   margin: auto;
 }
@@ -54,6 +54,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 -1rem;
+  padding: 3rem 3rem;
 }
 
 .col_4 {
@@ -88,8 +89,12 @@
   display: inline;
 }
 
+.p-1 {
+  padding: 1rem 1rem;
+}
+
 .p-1_top_bottom {
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 /* #endregion ||||| UTILITIES ||||| */
@@ -113,9 +118,6 @@
 
 /* #region ||||| COMMON RULES ||||| */
 
-[class^="col_"] {
-  padding: 1rem;
-}
 
 body {
   font-family: 'PT Sans', sans-serif;
@@ -126,11 +128,10 @@ h6 {
   font-weight: bold;
 }
 
-.card {
-  background-color: var(--responsive-card_bg);
-  border-radius: 1.5rem;
-  padding: 2rem;
-  height: 100%;
+p {
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: var(--responsive-font_color);
 }
 
 .btn {
@@ -143,10 +144,11 @@ h6 {
 }
 
 .cta_btn {
-  font-size: 1rem;
+  font-size: 0.9rem;
   background: var(--responsive-secondary);
-  padding: 0.7rem 4rem;
+  padding: 0.8rem 3rem;
   color: var(--responsive-light);
+  letter-spacing: 0.2rem;
 }
 
 .links {
@@ -175,31 +177,37 @@ h6 {
 
 
 /* #region ||||| MAIN ||||| */
+.card {
+  background-color: var(--responsive-card_bg);
+  border-radius: 1.2rem;
+  padding: 2rem;
+  height: 100%;
 
-.card img {
-  width: 100%;
-  padding-top: 1rem;
-  margin-bottom: -2rem;
+  img {
+    width: 100%;
+    padding-top: 2rem;
+    margin-bottom: -2rem;
+  }
+
+  h6 {
+    color: var(--responsive-secondary);
+  }
+
+  &.text_center h6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .strategic_planning,
+  .work_with_us,
+  .cta {
+    background-color: var(--responsive-primary);
+  }
 }
 
 .card_icon {
   font-size: 4.5rem;
-}
-
-.card_icon,
-.card h6 {
   color: var(--responsive-secondary);
-}
-
-.card.text_center h6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.card.text_center .strategic_planning,
-.work_with_us,
-.cta {
-  background-color: var(--responsive-primary);
 }
 
 /* #endregion ||||| MAIN ||||| */
@@ -241,6 +249,31 @@ h6 {
 
   .col_md_8 {
     width: calc((100% / 12) * 8);
+  }
+
+  .flex_spacing {
+    gap: 0.5rem
+  }
+
+  .row {
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+  }
+
+  .card {
+    line-height: 1.8rem;
+
+    img {
+      width: 60%;
+    }
+  }
+
+  p.p-1_top_bottom {
+    padding: 2rem 0;
+  }
+
+  .cta_btn {
+    border-radius: 1.2rem;
   }
 
 }
