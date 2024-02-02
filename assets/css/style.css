@@ -40,6 +40,10 @@
   gap: 2rem;
 }
 
+.text_center {
+  text-align: center;
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -120,13 +124,13 @@ body {
 h6 {
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--responsive-secondary);
 }
 
 .card {
   background-color: var(--responsive-card_bg);
   border-radius: 1.5rem;
   padding: 2rem;
+  height: 100%;
 }
 
 .btn {
@@ -178,7 +182,21 @@ h6 {
   margin-bottom: -2rem;
 }
 
-.strategic_planning,
+.card_icon {
+  font-size: 4.5rem;
+}
+
+.card_icon,
+.card h6 {
+  color: var(--responsive-secondary);
+}
+
+.card.text_center h6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.card.text_center .strategic_planning,
 .work_with_us,
 .cta {
   background-color: var(--responsive-primary);
