@@ -23,7 +23,7 @@
 
 .p_absolute {
   position: absolute;
-  top: 15%;
+  top: 5%;
   left: 45%;
 }
 
@@ -495,6 +495,35 @@ p {
 
     img {
       width: 25%;
+    }
+  }
+
+  .about_us {
+    .row {
+      padding: 3rem 3rem 6rem;
+      gap: 3.5rem;
+      flex-wrap: nowrap;
+    }
+
+    .about_us_quote {
+
+      img {
+        width: 80%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      p {
+        font-size: 2.1rem;
+        line-height: 2.5rem;
+      }
+
+      .p_absolute {
+        position: absolute;
+        top: 5%;
+        left: 65%;
+      }
     }
   }
 }
