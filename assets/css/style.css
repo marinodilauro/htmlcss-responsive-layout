@@ -51,7 +51,6 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -1rem;
   padding: 3rem 2.5rem 4rem;
   gap: 1.5rem;
 }
@@ -304,7 +303,7 @@ p {
   }
 
   .col_md_4 {
-    width: calc((100% / 12) * 4);
+    width: calc((100% / 12) * 4 - 1.5rem);
   }
 
   .col_md_5 {
@@ -320,30 +319,13 @@ p {
   }
 
   .col_md_8 {
-    width: calc((100% / 12) * 8);
-    padding: 0 0.75rem 1.5rem 2rem;
-  }
-
-  .col_md_4:nth-child(2) {
-    padding: 0 2rem 1.5rem 0.75rem;
-  }
-
-  .col_md_4:nth-child(3) {
-    padding: 0 0.75rem 0 2rem;
-  }
-
-  .col_md_4:nth-child(4) {
-    padding: 0 0.75rem 0 0.75rem;
-  }
-
-  .col_md_4:nth-child(5) {
-    padding: 0 2rem 0 0.75rem;
+    width: calc((100% / 12) * 8 - 1.5rem);
   }
 
   .row {
-    gap: 0;
-    padding: 3rem 0 6rem 0;
-    margin: 0;
+    gap: 1.5rem;
+    padding: 3rem 1.5rem 6rem;
+    justify-content: center;
   }
 
   .demo_app .card {
@@ -384,8 +366,8 @@ p {
     width: calc((100% / 12) * 4);
   }
 
-  .col_lg_6 {
-    width: calc((100% / 12) * 6);
+  .col_lg_5 {
+    width: calc((100% / 12) * 5);
   }
 
   .col_lg_8 {
@@ -408,13 +390,18 @@ p {
     }
   }
 
-  /* .demo_app .card:first-child {
-    padding: 2rem 4rem 0 2rem;
-    
-    p {
-      padding-right: 4rem;
+  .strategic_planning {
+    .row {
+      flex-wrap: nowrap;
+      justify-content: space-around;
     }
-  } */
+
+    .card {
+      img {
+        width: 50%;
+      }
+    }
+  }
 }
 
 /* #endregion ||||| MEDIA QUERY ||||| */
