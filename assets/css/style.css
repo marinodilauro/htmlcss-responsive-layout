@@ -137,7 +137,7 @@ body {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: bold;
 }
 
@@ -146,8 +146,18 @@ h4 {
   font-weight: bold;
 }
 
+h5 {
+  color: var(--responsive-dark);
+  font-size: 1.2rem;
+}
+
 p {
   line-height: 1.5rem;
+}
+
+.card {
+  border-radius: 1.2rem;
+  padding: 1rem;
 }
 
 .btn {
@@ -206,10 +216,9 @@ p {
 
   .card {
     background-color: var(--responsive-card_bg);
-    border-radius: 1.2rem;
-    padding: 2rem;
     height: 100%;
     flex-wrap: wrap;
+    padding: 2rem;
 
     img {
       width: 100%;
@@ -229,6 +238,11 @@ p {
     &.text_center h4 {
       padding-top: 1.5rem;
       padding-bottom: 1.5rem;
+    }
+
+    .card_icon {
+      font-size: 4.5rem;
+      color: var(--responsive-secondary);
     }
 
   }
@@ -272,10 +286,39 @@ p {
 }
 
 
-.card_icon {
-  font-size: 4.5rem;
-  color: var(--responsive-secondary);
+.testimonials {
+
+  h3 {
+    color: var(--responsive-primary);
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  .card {
+    background-color: var(--responsive-primary);
+    border-radius: 3rem;
+    color: var(--responsive-light);
+    padding: 2rem 1rem;
+
+    img {
+      width: 80%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    h5 {
+      color: var(--responsive-light);
+      font-weight: bold;
+    }
+
+  }
 }
+
+
 
 /* #endregion ||||| MAIN ||||| */
 
@@ -328,6 +371,14 @@ p {
     justify-content: center;
   }
 
+  p.p-1_top_bottom {
+    padding: 2rem 0;
+  }
+
+  .cta_btn {
+    border-radius: 1.2rem;
+  }
+
   .demo_app .card {
     padding: 2rem 1.5rem;
 
@@ -341,12 +392,18 @@ p {
     }
   }
 
-  p.p-1_top_bottom {
-    padding: 2rem 0;
-  }
+  .testimonials .card {
+    display: flex;
+    text-align: start;
+    padding: 2rem 1.5rem 3rem;
 
-  .cta_btn {
-    border-radius: 1.2rem;
+    section {
+      padding-left: 2rem;
+    }
+
+    img {
+      width: 25%;
+    }
   }
 
 }
