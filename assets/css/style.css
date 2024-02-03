@@ -1,3 +1,24 @@
+/* TABLE OF CONTENTS
+
+- Utilities
+- Debug rules
+- Common rules
+- Header
+- Main
+  - Demo App
+  - Strategic Planning
+  - Testimonials
+  - Working with us
+  - About us
+  - Call to action
+- Footer
+- Media queries
+  - Tablet visualization
+  - Desktop visualization
+
+*/
+
+
 /* #region ||||| UTILITIES ||||| */
 
 * {
@@ -5,7 +26,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'PT Sans', sans-serif;
-  /* border: 1px dashed; */
 }
 
 :root {
@@ -230,6 +250,8 @@ p {
 
 /* #region ||||| MAIN ||||| */
 
+/* /// Demo App /// */
+
 .demo_app {
 
   .card {
@@ -263,6 +285,8 @@ p {
     }
   }
 }
+
+/* /// Strategic Planning /// */
 
 .strategic_planning {
   background-color: var(--responsive-primary);
@@ -301,6 +325,7 @@ p {
   }
 }
 
+/* /// Testimonials /// */
 
 .testimonials {
 
@@ -338,6 +363,8 @@ p {
   }
 }
 
+/* /// Working with us /// */
+
 .work_with_us {
 
   background-color: var(--responsive-primary);
@@ -370,6 +397,8 @@ p {
     }
   }
 }
+
+/* /// About us /// */
 
 .about_us {
 
@@ -416,6 +445,7 @@ p {
 
 }
 
+/* /// Call to action /// */
 
 .cta {
   background-color: var(--responsive-primary);
@@ -436,7 +466,7 @@ p {
 
   .row {
     gap: 0;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
   }
 
   .btn {
@@ -454,6 +484,21 @@ p {
 
 #site_footer {
   background-color: var(--responsive-dark);
+  color: var(--responsive-light);
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+  }
+
+  a {
+    color: var(--responsive-primary);
+  }
+
+  .row {
+    gap: 4.5rem;
+    padding: 2.5rem 1.8rem 2.5rem;
+  }
 }
 
 /* #endregion ||||| FOOTER ||||| */
@@ -461,9 +506,11 @@ p {
 
 /* #region ||||| MEDIA QUERY ||||| */
 
-/* Tablet visualization */
+/* #region /// Tablet visualization /// */
 
 @media screen and (min-width: 768px) {
+
+  /* #region // Common rules and utilities // */
 
   h1 {
     font-size: 5.8rem;
@@ -519,6 +566,12 @@ p {
     border-radius: 1.2rem;
   }
 
+  /* #endregion -- Common rules and utilities */
+
+  /* #region -- Main -- */
+
+  /* - Demo App - */
+
   .demo_app .card {
     padding: 2rem 1.5rem;
 
@@ -532,6 +585,8 @@ p {
     }
   }
 
+  /* - Strategic Planning - */
+
   .strategic_planning {
 
     h3 {
@@ -543,6 +598,8 @@ p {
       padding-bottom: 4rem;
     }
   }
+
+  /* - Testimonials - */
 
   .testimonials .card {
     display: flex;
@@ -557,6 +614,8 @@ p {
       width: 25%;
     }
   }
+
+  /* - About us - */
 
   .about_us {
     .row {
@@ -587,6 +646,8 @@ p {
     }
   }
 
+  /* - Call to action - */
+
   .cta {
 
     p:first-of-type {
@@ -609,11 +670,33 @@ p {
       border-radius: 2.5rem;
     }
   }
+
+  /* #endregion -- Main -- */
+
+  /* #region -- Footer -- */
+
+  #site_footer {
+
+    p {
+      font-size: 1rem;
+      line-height: normal;
+    }
+
+    .row {
+      padding: 2.5rem 12.5rem 2.5rem;
+    }
+  }
+
+  /* #endregion -- Footer -- */
 }
 
-/* Desktop visualization */
+/* #endregion /// Tablet visualization /// */
+
+/* #region /// Desktop visualization /// */
 
 @media screen and (min-width: 992px) {
+
+  /* #region // Common rules and utilities // */
 
   h3 {
     font-size: 2.8rem;
@@ -643,6 +726,12 @@ p {
     width: calc((100% / 12) * 8);
   }
 
+  /* #endregion -- Common rules and utilities */
+
+  /* #region -- Main -- */
+
+  /* - Demo App - */
+
   .demo_app .card {
     flex-wrap: nowrap;
 
@@ -658,6 +747,8 @@ p {
       padding-right: 2.5rem;
     }
   }
+
+  /* - Strategic Planning - */
 
   .strategic_planning {
 
@@ -677,6 +768,8 @@ p {
     }
   }
 
+  /* - Testimonials - */
+
   .testimonials .card {
     align-items: center;
 
@@ -693,6 +786,8 @@ p {
     }
   }
 
+  /* - Working with us - */
+
   .work_with_us {
 
     .cta_btn {
@@ -700,6 +795,8 @@ p {
       padding: 0.7rem 3rem
     }
   }
+
+  /* - About us - */
 
   .about_us {
 
@@ -731,6 +828,8 @@ p {
 
   }
 
+  /* - Call to action - */
+
   .cta {
 
     .row {
@@ -745,6 +844,21 @@ p {
       padding-right: 2rem;
     }
   }
+
+  /* #endregion -- Main -- */
+
+  /* #region -- Footer -- */
+
+  #site_footer {
+
+    .row {
+      padding: 2.5rem 24.5rem 2.5rem;
+    }
+  }
+
+  /* #endregion -- Footer -- */
 }
+
+/* #endregion /// Desktop visualization /// */
 
 /* #endregion ||||| MEDIA QUERY ||||| */
